@@ -1,0 +1,3 @@
+class Dato < ApplicationRecord
+end
+  

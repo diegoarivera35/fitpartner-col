@@ -10,7 +10,22 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_02_11_011030) do
+ActiveRecord::Schema.define(version: 2020_02_12_002001) do
+
+  create_table "datos", force: :cascade do |t|
+    t.string "genero"
+    t.boolean "sedentario"
+    t.boolean "moderado"
+    t.boolean "activo"
+    t.integer "altura"
+    t.integer "peso"
+    t.integer "cintura"
+    t.integer "cuello"
+    t.integer "cadera"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.integer "user_id"
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false
