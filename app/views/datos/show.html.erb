@@ -1,36 +1,48 @@
 <p id="notice"><%= notice %></p>
 
-
-
-
-
-
-
-
-
-
+<p>
+  <strong>Genero:</strong>
+  <%= @dato.genero %>
+</p>
 
 <p>
-  <strong>Name:</strong>
-  <%= @dato.name %>
+  <strong>Sedentario:</strong>
+  <%= @dato.sedentario %>
+</p>
+
+<p>
+  <strong>Moderado:</strong>
+  <%= @dato.moderado %>
+</p>
+
+<p>
+  <strong>Activo:</strong>
+  <%= @dato.activo %>
+</p>
+<p>
+  <strong>Altura:</strong>
+  <%= @dato.altura %>
+</p>
+<p>
+  <strong>Peso:</strong>
+  <%= @dato.peso %>
+</p>
+<p>
+  <strong>Cintura:</strong>
+  <%= @dato.cintura %>
+</p>
+
+<p>
+  <strong>Cuello:</strong>
+  <%= @dato.cuello %>
+</p>
+
+<p>
+  <strong>Cadera:</strong>
+  <%= @dato.cadera %>
 </p>
 
 
 
-
-
-
-
-
-<p>
-  <strong>Image:</strong>
-  <%= image_tag(@gallery.image) %>
-</p>
-
-<p>
-  <strong>Description:</strong>
-  <%= @gallery.description %>
-</p>
-
-<%= link_to 'Edit', edit_gallery_path(@gallery) %> |
-<%= link_to 'Back', galleries_path %>
+<%= link_to 'Edit', edit_dato_path(@dato) %> |
+<%= link_to 'Back', datos_path %>

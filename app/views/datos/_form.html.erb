@@ -1,0 +1,57 @@
+<%= form_with(model: dato, local: true) do |form| %>
+ 
+
+
+
+
+<div class="contenedor">
+
+
+
+ <div class="field">
+    <%= form.label :genero %>
+    <div class="controls">
+        <%= form.select(:genero, options_for_select([['Hombre', 'Hombre'], ['Mujer', 'Mujer']])) %>
+  </div>
+
+ <div class="field">
+    <%= form.label :moderado %>
+    <%= form.text_area :moderado %>
+  </div>
+
+ <div class="field">
+    <%= form.label :activo %>
+    <%= form.text_area :activo %>
+  </div>
+
+   <div class="field">
+    <%= form.label :altura %>
+    <%= form.text_area :altura %>
+  </div>
+  
+   <div class="field">
+    <%= form.label :peso %>
+    <%= form.text_area :peso %>
+  </div>
+
+   <div class="field">
+    <%= form.label :cintura %>
+    <%= form.text_area :cintura %>
+  </div>
+
+   <div class="field">
+    <%= form.label :cuello %>
+    <%= form.text_area :cuello %>
+  </div>
+
+   <div class="field">
+    <%= form.label :cadera %>
+    <%= form.text_area :cadera %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
+
+</div>
