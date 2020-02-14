@@ -1,4 +1,5 @@
 class DatosController < ApplicationController
+  before_action :authenticate_user!
   def index
     @datos = Dato.all
   end
@@ -20,14 +21,14 @@ class DatosController < ApplicationController
 
 def create
   @dato = Dato.new(dato_params)
-
+  @dato.user_id = current_user.id
   if @dato.save
-    format.html { redirect_to @dato, notice: 'la informaciòn se guardò correctamente'}
-    format.html { redirect_to @dato }
+     redirect_to @dato, notice: 'la informaciòn se guardò correctamente'
   else
-    format.html { render :new }
+     render :new 
   end
 end
+
 
 
 

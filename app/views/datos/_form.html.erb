@@ -1,10 +1,12 @@
+
+  
+
+
 <%= form_with(model: dato, local: true) do |form| %>
  
 
 
-
-
-<div class="contenedor">
+  <div class="col-md-6 offset-md-3 text-center border rounded p-3" >
 
 
 
@@ -14,44 +16,64 @@
         <%= form.select(:genero, options_for_select([['Hombre', 'Hombre'], ['Mujer', 'Mujer']])) %>
   </div>
 
+ 
+
+  <div class="field">
+  <%= form.label :sedentario %>
+  <%= form.text_area :sedentario, placeholder: "true/false", size: "20x1"%>
+</div>
+
+
+
+
+
  <div class="field">
     <%= form.label :moderado %>
-    <%= form.text_area :moderado %>
+    <%= form.text_area :moderado, placeholder: "true/false", size: "20x1"%>
   </div>
 
  <div class="field">
     <%= form.label :activo %>
-    <%= form.text_area :activo %>
+    <%= form.text_area :activo, placeholder: "true/false", size: "20x1"%>
   </div>
 
    <div class="field">
     <%= form.label :altura %>
-    <%= form.text_area :altura %>
+    <%= form.number_field(:altura, in: 1.0..400.0, step: 0.1, placeholder: "cms") %>
   </div>
   
+
+
+
    <div class="field">
     <%= form.label :peso %>
-    <%= form.text_area :peso %>
+    <%= form.number_field(:peso, in: 1.0..400.0, step: 0.1, placeholder: "kgs") %>
   </div>
 
    <div class="field">
     <%= form.label :cintura %>
-    <%= form.text_area :cintura %>
+    <%= form.number_field(:cintura, in: 1.0..400.0, step: 0.1, placeholder: "cms") %>
   </div>
 
    <div class="field">
     <%= form.label :cuello %>
-    <%= form.text_area :cuello %>
+    <%= form.number_field(:cuello, in: 1.0..400.0, step: 0.1, placeholder: "cms") %>
   </div>
 
    <div class="field">
     <%= form.label :cadera %>
-    <%= form.text_area :cadera %>
+    <%= form.number_field(:cadera, in: 1.0..400.0, step: 0.1, placeholder: "cms, solo si es mujer") %>
   </div>
 
   <div class="actions">
     <%= form.submit %>
   </div>
+
+
+
+  </div>
+
+
+
 <% end %>
 
-</div>

@@ -1,0 +1,22 @@
+<div class="col-md-6 offset-md-3 text-center border rounded p-3">
+
+
+<h1>Usuarios</h1>
+ 
+ 
+
+<% if current_user %>
+<div class="btn btn-outline-primary">
+    <%= link_to 'Cerrar Sesion', destroy_user_session_path, method: :delete %></div>
+    <div class="btn btn-light" style="color:white !important">
+    <%= link_to 'Ingresar Datos', new_dato_path %></div>
+<% else %>
+<div class="btn btn-light">
+    <%= link_to 'Registrarse', new_user_registration_path %></div>
+<div class="btn btn-light">
+    <%= link_to 'Iniciar Sesion', new_user_session_path %></div>
+<% end %>
+
+ 
+ 
+</div>

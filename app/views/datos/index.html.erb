@@ -1,7 +1,7 @@
 <p id="notice"><%= notice %></p>
 
 <h1>Datos</h1>
-
+<%= current_user.email %>
 <table>
   <thead>
     <tr>
@@ -19,7 +19,7 @@
   </thead>
 
   <tbody>
-    <% @datos.each do |dato| %>
+    <% current_user.datos.each do |dato| %>
       <tr>
         <td><%= dato.genero %></td>
         <td><%= dato.sedentario %></td>

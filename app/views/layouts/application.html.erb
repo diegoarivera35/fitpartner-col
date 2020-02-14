@@ -4,14 +4,45 @@
     <title>FitPartnerCol</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+  
+  <%= stylesheet_pack_tag 'styles', media: 'all', 'data-turbolinks-track': 'reload' %>
+<%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  
+  
   </head>
 
-  <body>
+  <body  style="background-color: #cccccc;">
+
+
+
+
+
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
+
+
+
+  <div class="container mt-3">
+
+  
+
+
+
+
+
+
+  <div class="text-center">
+  <div class="text-uppercase mx-3 fluid">
+  <h2>Calculadora de porcentaje de grasa corporal</h2></div>
+  
+  <p>¿Estás en tu peso ideal? ¿Te sobra algo de grasa? Con la calculadora de grasa corporal online podrás averiguar qué porcentaje de grasa tienes de forma muy sencilla.</p>
+  </div>
+
+
     <%= yield %>
+  </div>
   </body>
 </html>
