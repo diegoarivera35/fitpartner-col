@@ -18,24 +18,17 @@
 
  
 
+
   <div class="field">
-  <%= form.label :sedentario %>
-  <%= form.text_area :sedentario, placeholder: "true/false", size: "20x1"%>
+  <%= form.label :actividad %>
+  <div class="controls">
+      <%= form.select(:actividad, options_for_select([['Sedentario', 'Sedentario'], ['Moderado', 'Moderado'], ['Activo', 'Activo']])) %>
 </div>
 
 
 
 
 
- <div class="field">
-    <%= form.label :moderado %>
-    <%= form.text_area :moderado, placeholder: "true/false", size: "20x1"%>
-  </div>
-
- <div class="field">
-    <%= form.label :activo %>
-    <%= form.text_area :activo, placeholder: "true/false", size: "20x1"%>
-  </div>
 
    <div class="field">
     <%= form.label :altura %>

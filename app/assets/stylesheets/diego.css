@@ -1,0 +1,74 @@
+
+/*
+html {
+ background-image: url(branding/fondo.jpg);
+}
+
+body {
+    background-color: transparent !important;
+    color: white !important;
+
+}
+*/
+
+
+label {
+    float: left;
+    margin-top: 7px;
+    margin-bottom: 2px !important;
+    width: 85px;
+    text-align: left;
+    margin-left: 12px;
+}
+
+#dato_genero {
+    width: 200px;
+}
+
+
+
+#dato_actividad {
+    width: 200px;
+}
+
+
+
+
+#dato_altura {
+    width: 200px;
+}
+
+#dato_peso {
+    width: 200px;
+}
+
+#dato_cuello {
+    width: 200px;
+}
+
+#dato_cintura {
+    width: 200px;
+}
+
+#dato_cadera {
+    width: 200px;
+}
+
+
+.actions > input:nth-child(1) {
+    width: 200px;
+    margin-right: 13px;
+}
+
+html body div.container.mt-3 div.col-md-8.offset-md-2.text-center form div.col-md-6.offset-md-3.text-center.border.rounded.p-3 div.field div.field div.actions {
+    text-align: right;
+}
+
+
+
+
+
+
+
+
+

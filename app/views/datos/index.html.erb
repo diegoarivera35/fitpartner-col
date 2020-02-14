@@ -2,13 +2,11 @@
 
 <h1>Datos</h1>
 <%= current_user.email %>
-<table>
+<table class="table table-bordered table-dark">
   <thead>
     <tr>
       <th>genero</th>
-      <th>sedentario</th>
-      <th>moderado</th>
-      <th>activo</th>
+      <th>actividad</th>
       <th>altura</th>
       <th>peso</th>
       <th>cintura</th>
@@ -22,14 +20,13 @@
     <% current_user.datos.each do |dato| %>
       <tr>
         <td><%= dato.genero %></td>
-        <td><%= dato.sedentario %></td>
-        <td><%= dato.moderado %></td>
-        <td><%= dato.activo %></td>
+        <td><%= dato.actividad %></td>
         <td><%= dato.altura %></td>
         <td><%= dato.peso %></td>
         <td><%= dato.cintura %></td>
         <td><%= dato.cuello %></td>
-        <td><%= dato.cadera %></td>                      
+        <td><%= dato.cadera %></td>
+        <td><%= dato.bf %></td>                      
         <td><%= link_to 'Show', dato %></td>
         <td><%= link_to 'Edit', edit_dato_path(dato) %></td>
         <td><%= link_to 'Destroy', dato, method: :delete, data: { confirm: 'Are you sure?' } %></td>
@@ -40,4 +37,6 @@
 
 <br>
 
-<%= link_to 'New Dato', new_dato_path %>
+
+<div class="btn btn-outline-primary">
+<%= link_to 'New Dato', new_dato_path %></div>

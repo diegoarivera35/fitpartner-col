@@ -51,7 +51,7 @@ end
 private
 
 def dato_params
-  params.require(:dato).permit(:genero,:sedentario,:moderado,:activo,:altura,:peso,:cintura,:cuello,:cadera,:user_id)
+  params.require(:dato).permit(:genero,:actividad,:altura,:peso,:cintura,:cuello,:cadera,:user_id)
 end
 
 
