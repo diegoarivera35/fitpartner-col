@@ -15,11 +15,15 @@
   </head>
 
   <body >
+  <div id="bg_container" class='unclickable' onclick='return false;'>
+  <iframe loop="" id="bg" src="https://www.youtube.com/embed/4OrvzBYUr1Y?rel=0&autoplay=1&loop=0&vq=hd720=1&mute=1&enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+
+
+</div>
 
 
 
-
-
+<div id="content">
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
 
@@ -43,6 +47,7 @@
 
 
     <%= yield %>
+  </div>
   </div>
   </body>
 </html>

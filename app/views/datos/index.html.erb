@@ -1,7 +1,8 @@
 <p id="notice"><%= notice %></p>
 
 <h1>Datos</h1>
-<%= current_user.email %>
+<h2>
+<%= current_user.email %></h2>
 <table class="table table-bordered table-dark">
   <thead>
     <tr>
@@ -12,7 +13,8 @@
       <th>cintura</th>
       <th>cuello</th>
       <th>cadera</th>
-      <th colspan="3"></th>
+      <th>IMC</th>
+      <th colspan="3">Acciones</th>
     </tr>
   </thead>
 
@@ -26,7 +28,7 @@
         <td><%= dato.cintura %></td>
         <td><%= dato.cuello %></td>
         <td><%= dato.cadera %></td>
-        <td><%= dato.bf %></td>                      
+        <td><%= dato.IMC %></td>                      
         <td><%= link_to 'Show', dato %></td>
         <td><%= link_to 'Edit', edit_dato_path(dato) %></td>
         <td><%= link_to 'Destroy', dato, method: :delete, data: { confirm: 'Are you sure?' } %></td>
